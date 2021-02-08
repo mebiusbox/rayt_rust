@@ -1,0 +1,120 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "cargo_release",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["run", "--release"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "cargo_run",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["run"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "cargo_build",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["build"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "cargo_check",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["check"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "cargo_clippy",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["clippy"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "cargo_fmtcheck",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["fmt", "--", "--check"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "fmtcheck",
+            "type": "shell",
+            "command": "rustfmt",
+            "args": ["${file}", "--check"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "fmt",
+            "type": "shell",
+            "command": "rustfmt",
+            "args": ["${file}"],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build",
+            "presentation": {
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+    ]
+}
