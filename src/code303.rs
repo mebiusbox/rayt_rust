@@ -702,7 +702,7 @@ impl SceneWithDepth for CornelBoxScene {
                 if to_light.dot(hit.n) < 0.0 {
                     return emitted;
                 }
-                let light_area = (343.0 - 213.0) * (332.0 - 217.0);
+                let light_area = (343.0 - 213.0) * (332.0 - 227.0);
                 let light_cosine = to_light.y().abs();
                 if light_cosine < 0.000001 {
                     return emitted;
